@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   get 'book_comments/create'
   get 'book_comments/destroy'
   get 'favorites/create'
@@ -20,7 +21,7 @@ Rails.application.routes.draw do
       get "followers" => "relationships#followers", as: "followers"
   end
   
- 
+  get "/search", to: "searches#search"
   
 
 end
